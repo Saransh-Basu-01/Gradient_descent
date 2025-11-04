@@ -16,6 +16,21 @@ The repository consists of several Jupyter Notebooks, each focusing on a differe
 * **`Gradient_descent_step_by_step.ipynb`**:
     * This notebook breaks down the algorithm into individual stages, clearly explaining the **Cost Function (Mean Squared Error)**, the **partial derivatives** (gradients), and the update rule for the parameters (slope $m$ and intercept $b$).
 
+### 🚀 Gradient Descent Variants
+
+This section explores the three major modes of gradient computation, crucial for scaling the algorithm to large datasets:
+
+* **`batch_gradient_descent.ipynb`**:
+    * A detailed look at **Batch Gradient Descent**, where the entire dataset is used to calculate the gradient in each iteration. Ideal for small to medium datasets and guaranteed convergence.
+
+* **`stochastic_gradient_descent.ipynb`**:
+    * Explores **Stochastic Gradient Descent (SGD)**, updating parameters based on the gradient of a single, randomly chosen data point. Demonstrates faster iterations and handling of very large datasets.
+
+* **`mini_batch_gradient_descent.ipynb`**:
+    * Implements **Mini-Batch Gradient Descent**, which uses a small, defined subset of the data for each update. This method provides the best balance between computational efficiency and stable convergence.
+
+### 🖼️ Visualizations
+
 * **`gradient-descent-animation(onlyb).ipynb`**:
     * Visualizes the Gradient Descent process when only the **intercept ($b$)** is being optimized, while the slope ($m$) is kept constant. It shows how the line shifts vertically to minimize the error.
 
@@ -30,9 +45,10 @@ The notebooks provide hands-on examples for these core concepts:
 
 1.  **Cost Function (MSE)**: The measure of error that Gradient Descent aims to minimize.
 2.  **Derivatives (Gradients)**: The mathematical foundation for determining the direction and magnitude of the steepest descent.
-3.  **Learning Rate ($\alpha$)**: The hyperparameter that controls the step size in each iteration.
-4.  **Parameter Update Rule**: How the slope ($m$) and intercept ($b$) are iteratively adjusted.
-5.  **Convergence**: Observing when the algorithm reaches the minimum point.
+3.  **Gradient Descent Variants**: Hands-on comparison and examples of **Batch**, **Stochastic (SGD)**, and **Mini-Batch Gradient Descent**, highlighting their trade-offs in computation, convergence speed, and memory requirements.
+4.  **Learning Rate ($\alpha$)**: The hyperparameter that controls the step size in each iteration.
+5.  **Parameter Update Rule**: How the slope ($m$) and intercept ($b$) are iteratively adjusted.
+6.  **Convergence**: Observing when the algorithm reaches the minimum point.
 
 ---
 
